@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <h2>I'm Raihaan</h2>
-      <Button>Nayeem</Button>
+      <Button>Demo</Button>
     </div>
   );
 }

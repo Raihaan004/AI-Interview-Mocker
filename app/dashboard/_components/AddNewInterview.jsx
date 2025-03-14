@@ -111,7 +111,6 @@ function AddNewInterview() {
                 </DialogHeader>
             </DialogContent>
             </Dialog>
-
     </div>
   )
 }
