@@ -70,7 +70,7 @@ function AddNewInterview() {
     <div>
         <div className='p-10 border rounded-lg bg-secondary hover:scale-105 hover:shadow-md cursor-pointer transition-all
         'onClick={()=>setOpenDialog(true)}>
-            <h2 className='text-lg text-center'>+ Add New</h2>
+            <h2 className='text-lg text-center'>+ Add New Test</h2>
         </div>
         <Dialog open = {openDialog}>
             
@@ -80,7 +80,7 @@ function AddNewInterview() {
                 <DialogDescription>
                     <form onSubmit={onSubmit}>
                     <div>
-                        <h2>Add Details about your job position/role, Job description and years of experience</h2>
+                        <h2>Add details about your job position/role, Job description and years of experience</h2>
                         <div className='mt-7 my-3'>
                             <label>Job Role/Job Position</label>
                             <Input placeholder="Ex. Full Stack Developer" required
@@ -89,13 +89,13 @@ function AddNewInterview() {
                             
                         </div>
                         <div className='my-3'>
-                            <label>Job Description/Tech Stack (In Short)</label>
+                            <label>Job Description/Tech Stack (In short)</label>
                             <Textarea placeholder="Ex. React, Angular, NodeJs, MySql etc" required
                             onChange={(event)=>setJobDesc(event.target.value)}
                             />
                         </div>
                         <div className='my-3'>
-                            <label>Years of experience</label>
+                            <label>Years of Experience</label>
                             <Input placeholder="Ex. 5" type="number" max="100" required
                             onChange={(event)=>setJobExperience(event.target.value)}
                             />

@@ -23,7 +23,7 @@ function InterviewList() {
   return (
 
     <div>
-        <h2 className='font-medium text-lg'>Previous Mock Interview</h2>
+        <h2 className='font-medium text-lg'>Previous Preparation</h2>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-3'>
             {interviewList&&interviewList.map((interview,index)=>(<InterviewItemCard interview={interview}key={index}/>))}
         </div>
