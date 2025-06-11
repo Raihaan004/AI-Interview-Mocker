@@ -32,7 +32,7 @@ function Interview({params}) {
             <div className='flex flex-col p-5 rounded-lg border gap-5'>
             <h2 className='text-lg'><strong>Job Role/Job Position: </strong>{interviewData.jobPosition}</h2>
             <h2 className='text-lg'><strong>Job description/Tech Stack: </strong>{interviewData.jobDesc}</h2>
-            <h2 className='text-lg'><strong>Preparation Timeframe: </strong>{interviewData.jobExperience}</h2>
+            <h2 className='text-lg'><strong>Years of Experience: </strong>{interviewData.jobExperience}</h2>
             </div>
             <div className='p-5 border rounded-lg border-yellow-300 bg-yellow-100'>
                 <h2 className='flex gap-2 items-center text-yellow-500'><Lightbulb/><strong>Information</strong></h2>
@@ -50,13 +50,13 @@ function Interview({params}) {
                 }
             />:<>
             <WebcamIcon className='h-72 w-full my-7 p-20 bg-secondary rounded-lg border'/>
-            <Button variant="ghost" className="w-full"onClick={()=>setWebCamEnabled(true)}>Enable Web Cam and Microphone</Button>
+            <Button variant="" className="w-full bg-white border-b-amber-200 text-primary hover:text-white my-3"onClick={()=>setWebCamEnabled(true)}>Enable Web Cam and Microphone</Button>
             </>
             }
         </div>
         </div>
         <div className='flex justify-end  items-end'>
-            <Link href={'/dashboard/interview/'+params.interviewId+'/start'}><Button>Start Pratice Test</Button></Link>
+            <Link href={'/dashboard/interview/'+params.interviewId+'/start'}><Button>Let's Start</Button></Link>
         
         </div>
     </div>
